@@ -26,8 +26,10 @@ const initialState: QuestionsState = {
   resulted: { accuracy: 0, result: { } },
 };
 
+const PORT = import.meta.env.VITE_URL_BACKEND_PORT;
+
 export const getQuestions = createAsyncThunk('questions/getQuestions', async () => {
-  const response = await fetch(`http://localhost:8000/api/questions`);
+  const response = await fetch(`http://localhost:${PORT}/api/questions`);
   if (response.ok) {
     const data = await response.json();
     return data;
@@ -37,7 +39,7 @@ export const getQuestions = createAsyncThunk('questions/getQuestions', async () 
 });
 
 export const postResult = createAsyncThunk('questions/postResult', async (answers: string[]) => {
-  const response = await fetch(`http://localhost:8000/api/result`, {
+  const response = await fetch(`http://localhost:${PORT}/api/result`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
