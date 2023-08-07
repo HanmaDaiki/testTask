@@ -3,13 +3,14 @@
 ## Install
 
 ```
-$ git clone https://github.com/HanmaDaiki/testTask
+git clone https://github.com/HanmaDaiki/testTask
+cd testTask
 ```
 
 ### backend
 ```
-$ cd testTask/backend
-$ npm install
+cd backend
+npm install
 ```
 
 rename backend/.env.example to backend/.env and add your port in this file
@@ -19,14 +20,14 @@ $ npm run dev
 ```
 
 ### frontend
-
+Start in root project folder
 ```
-testTask$ cd frontend
-$ npm install
+cd frontend
+npm install
 ```
 
 rename frontend/.env.example to frontend/.env and add your backend port in this file
 
 ```
-$ npm run dev
+npm run dev
 ```
