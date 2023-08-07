@@ -12,7 +12,7 @@ $ cd testTask/backend
 $ npm install
 ```
 
-rename backend/.env.example to backend/.env and add your port
+rename backend/.env.example to backend/.env and add your port in this file
 
 ```
 $ npm run dev
@@ -25,7 +25,7 @@ testTask$ cd frontend
 $ npm install
 ```
 
-rename frontend/.env.example to frontend/.env and add your backend port
+rename frontend/.env.example to frontend/.env and add your backend port in this file
 
 ```
 $ npm run dev

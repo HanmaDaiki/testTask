@@ -5,7 +5,7 @@ import { useAppDispatch } from '../../hook/useAppDispatch';
 import { QuestionsState, postResult } from '../../store/questionsSlice';
 
 export const Timer: FC = () => {
-  const [timer, setTimer] = useState(10);
+  const [timer, setTimer] = useState(120);
   const { userAnswer } = useSelector((state: { questions: QuestionsState }) => state.questions);
   const dispatch = useAppDispatch();
 
